@@ -112,3 +112,4 @@ def multipath_channel(tx_signal, delay, gain):
     rx_signal_full = np.convolve(tx_signal, channel_impulse_response, mode='full')
     rx_signal = rx_signal_full[:len(tx_signal)]
     return rx_signal
+
